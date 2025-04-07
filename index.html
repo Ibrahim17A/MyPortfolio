@@ -48,6 +48,9 @@
       border-bottom: 2px solid #000000;
       padding-bottom: 0.5rem;
     }
+    h3 {
+      color: #000000;
+    }
     a {
       color: #000000;
       text-decoration: none;
@@ -56,6 +59,21 @@
       display: inline-block;
       margin-right: 1rem;
       margin-top: 0.5rem;
+    }
+    .skills-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    .skill-column {
+      flex: 1;
+      min-width: 250px;
+    }
+    .skill-column ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      margin: 0;
     }
     footer {
       text-align: center;
@@ -82,15 +100,22 @@
 
     <section>
       <h2>Featured Projects</h2>
-      <p><strong>Budgeting App for Commerce Bank (In Progress):</strong> A full-stack application for personal finance that tracks spending, subscriptions, and custom spending limits with alerts and visual breakdowns.</p>
-      <p><strong>IBM Data Science Professional Certificate (Applied Learning Project - In progress):</strong> This Professional Certificate has a strong emphasis on applied learning and includes a series of hands-on labs in the IBM Cloud that give you practical skills with applicability to real jobs. You'll also have the option to learn how generative AI tools and techniques are used in data science. Below are tools that will be used in these projects: </p>
-      <ul>
-      <li>Jupyter / JupyterLab</li>
-      <li>GitHub</li>
-      <li>R Studio</li>
-      <li>Watson Studio</li>
-</ul>
 
+      <p><strong>Budgeting App for Commerce Bank (In Progress):</strong> A full-stack application for personal finance that tracks spending, subscriptions, and custom spending limits with alerts and visual breakdowns.</p>
+
+      <p><strong>IBM Data Science Professional Certificate (Applied Learning Project - In Progress):</strong> This Professional Certificate has a strong emphasis on applied learning and includes a series of hands-on labs in the IBM Cloud that give you practical skills with applicability to real jobs. You'll also have the option to learn how generative AI tools and techniques are used in data science.</p>
+
+      <div class="skills-section">
+        <div class="skill-column">
+          <h3>Tools Used</h3>
+          <ul>
+            <li>Jupyter / JupyterLab</li>
+            <li>GitHub</li>
+            <li>R Studio</li>
+            <li>Watson Studio</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
     <section>

@@ -59,10 +59,14 @@
       color: #00ffff;
       text-decoration: underline;
     }
-    .links a {
-      display: inline-block;
-      margin-right: 1rem;
-      margin-top: 0.5rem;
+    .links-vertical {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 999;
     }
     .skills-section {
       display: flex;
@@ -93,6 +97,14 @@
   </style>
 </head>
 <body>
+
+  <!-- Floating Links on Top-Left -->
+  <div class="links-vertical">
+    <a href="https://docs.google.com/document/d/1UckaO-XrUd31oDnmE4aagH-QQyfuSTkj/view" target="_blank">📄 Resume</a>
+    <a href="https://www.linkedin.com/in/ibrahim-alborno-2404a7293/" target="_blank">🔗 LinkedIn</a>
+    <a href="https://github.com/ibrahim17a" target="_blank">💻 GitHub</a>
+  </div>
+
   <header>
     <h1>Ibrahim Alborno</h1>
     <p>Computer Science BS/MS Student | Aspiring Data Scientist | Focused on AI & Data-Driven Solutions</p>
@@ -147,15 +159,6 @@
             <li>ScipPy</li>
           </ul>
         </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Links</h2>
-      <div class="links">
-        <a href="https://docs.google.com/document/d/1UckaO-XrUd31oDnmE4aagH-QQyfuSTkj/view" target="_blank">📄 Resume</a>
-        <a href="https://www.linkedin.com/in/ibrahim-alborno-2404a7293/" target="_blank">🔗 LinkedIn</a>
-        <a href="https://github.com/ibrahim17a" target="_blank">💻 GitHub</a>
       </div>
     </section>
   </div>

@@ -62,7 +62,7 @@
     .links-vertical {
       position: fixed;
       top: 20px;
-      left: 150px; /* ← Now 150 pixels from the left */
+      left: 200px; /* Link container is 200px from the left */
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -73,6 +73,7 @@
       font-size: 1.2rem;
       margin-bottom: 0.5rem;
       text-decoration: underline;
+      margin-left: 20px; /* Title nudged to 220px */
     }
     .skills-section {
       display: flex;
@@ -104,7 +105,7 @@
 </head>
 <body>
 
-  <!-- Floating Links on Top-Left (adjusted to left: 150px) -->
+  <!-- Floating Links with title offset further right -->
   <div class="links-vertical">
     <div class="links-vertical-title">Links</div>
     <a href="https://docs.google.com/document/d/1UckaO-XrUd31oDnmE4aagH-QQyfuSTkj/view" target="_blank">📄 Resume</a>

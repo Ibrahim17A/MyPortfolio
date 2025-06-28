@@ -13,42 +13,63 @@
       background: #000000;
       color: #ffffff;
     }
+
     header {
+      background: #000000;
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2rem 1rem 0.5rem 1rem;
+      position: relative;
     }
+
     header h1 {
       margin: 0;
       font-size: 2.5rem;
     }
+
     header p {
-      margin: 0.5rem 0 1rem;
-      font-size: 1.2rem;
-    }
-    header img {
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin-top: 1rem;
-      border: 3px solid #ffffff;
+      margin: 0.5rem 0 1.5rem;
+      font-size: 1rem;
     }
 
-    .links-in-header {
-      margin-top: 1.5rem;
+    .links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
     }
-    .links-in-header h2 {
-      margin-bottom: 0.5rem;
-    }
-    .links-in-header a {
-      display: inline-block;
-      margin: 0.3rem 0.75rem;
-      color: #eeeeee;
+
+    .links a {
+      color: #ffffff;
       text-decoration: none;
-      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
     }
-    .links-in-header a:hover {
-      text-decoration: underline;
+
+    .about-floating {
+      position: absolute;
+      left: 30px;
+      top: 50px;
+      width: 300px;
+      text-align: left;
+    }
+
+    .about-floating h2 {
+      border-bottom: 1px solid #fff;
+      padding-bottom: 0.5rem;
+    }
+
+    .about-img {
+      margin-top: 0.5rem;
+    }
+
+    .about-img img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 3px solid #ffffff;
+      object-fit: cover;
     }
 
     .container {
@@ -56,20 +77,21 @@
       margin: 2rem auto;
       padding: 0 1rem;
     }
+
     section {
       margin-bottom: 2rem;
     }
+
     h2 {
+      color: #ffffff;
       border-bottom: 2px solid #ffffff;
       padding-bottom: 0.5rem;
     }
+
     h3 {
       color: #ffffff;
     }
-    a {
-      color: #ffffff;
-      text-decoration: none;
-    }
+
     .skills-section {
       display: flex;
       flex-wrap: wrap;
@@ -77,35 +99,53 @@
       gap: 2rem;
       margin-top: 1rem;
     }
+
     .skill-column {
       flex: 1;
       min-width: 200px;
     }
+
     .skill-column ul {
       list-style-type: disc;
       padding-left: 1.5rem;
       margin: 0;
     }
+
     .project-list li {
       margin-bottom: 0.75rem;
     }
+
     footer {
       text-align: center;
       padding: 1rem;
-      background: #ffffff;
-      color: #000000;
+      background: #000000;
       font-size: 0.9rem;
+      color: #ffffff;
+      border-top: 1px solid #333;
     }
   </style>
 </head>
 <body>
   <header>
+    <!-- Floating About Me Block -->
+    <div class="about-floating">
+      <h2>About Me</h2>
+      <p>
+        Computer Science undergraduate pursuing a master's degree in computer science with an emphasis in Data Science and AI.
+        Passionate about uncovering insights through data and solving real-world problems by building tools that make life easier.
+        Currently focused on building a strong foundation in Python, SQL, and other Data Science tools.
+      </p>
+    </div>
+
     <h1>Ibrahim Alborno</h1>
     <p>Computer Science BS/MS Student | Aspiring Data Scientist | Focused on AI & Data-Driven Solutions</p>
-    <img src="Ibrahim.jpg" alt="Photo of Ibrahim Alborno" />
 
-    <div class="links-in-header">
-      <h2>Links</h2>
+    <div class="about-img">
+      <img src="Ibrahim.jpg" alt="Photo of Ibrahim Alborno" />
+    </div>
+
+    <div class="links">
+      <strong>Links</strong>
       <a href="https://docs.google.com/document/d/1UckaO-XrUd31oDnmE4aagH-QQyfuSTkj/view" target="_blank">📄 Resume</a>
       <a href="https://www.linkedin.com/in/ibrahim-alborno-2404a7293/" target="_blank">🔗 LinkedIn</a>
       <a href="https://github.com/ibrahim17a" target="_blank">💻 GitHub</a>
@@ -113,13 +153,6 @@
   </header>
 
   <div class="container">
-    <section>
-      <h2>About Me</h2>
-      <p>
-        Computer Science undergraduate pursuing a master’s degree in computer science with an emphasis in Data Science and AI. Passionate about uncovering insights through data and solving real-world problems by building tools that make life easier. Currently focused on building a strong foundation in Python, SQL, and other Data Science tools.
-      </p>
-    </section>
-
     <section>
       <h2>Featured Projects</h2>
       <p><strong>Budgeting App for Commerce Bank (In Progress):</strong> A full-stack application for personal finance that tracks spending, subscriptions, and custom spending limits with alerts and visual breakdowns.</p>
@@ -132,7 +165,7 @@
           <ul class="project-list">
             <li>Extract and graph financial data with the Pandas Python library</li>
             <li>Use SQL to query census, crime, and school demographic data sets</li>
-            <li>Wrangle data, graph plots, and create regression models to predict housing prices with data science Python libraries</li>
+            <li>Wrangle data, graph plots, and create regression models to predict housing prices</li>
             <li>Create a dynamic Python dashboard to improve US domestic flight reliability</li>
             <li>Apply machine learning classification algorithms to predict whether a loan case will be paid off</li>
             <li>Train and compare machine learning models</li>
@@ -148,24 +181,3 @@
           </ul>
         </div>
         <div class="skill-column">
-          <h3>Libraries</h3>
-          <ul>
-            <li>NumPy</li>
-            <li>Pandas</li>
-            <li>Matplotlib</li>
-            <li>Scikit-learn</li>
-            <li>Seaborn</li>
-            <li>Folium</li>
-            <li>ipython-sql</li>
-            <li>ScipPy</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <footer>
-    &copy; 2025 Ibrahim Alborno. All rights reserved.
-  </footer>
-</body>
-</html>

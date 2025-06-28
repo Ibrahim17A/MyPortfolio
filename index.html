@@ -141,6 +141,14 @@
     .video-preview .description {
       color: #ccc;
     }
+    .read-more {
+      color: #4db8ff;
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    .extra-description {
+      display: none;
+    }
     footer {
       text-align: center;
       padding: 1rem;
@@ -149,18 +157,27 @@
       font-size: 0.9rem;
     }
   </style>
+  <script>
+    function toggleReadMore(button) {
+      const extra = button.previousElementSibling;
+      if (extra.style.display === "none" || !extra.style.display) {
+        extra.style.display = "inline";
+        button.textContent = "Read less";
+      } else {
+        extra.style.display = "none";
+        button.textContent = "Read more...";
+      }
+    }
+  </script>
 </head>
 <body>
   <header>
-    <!-- Floating About Box -->
     <div class="about-floating">
       <h2>About Me</h2>
       <p>
         Computer Science undergraduate pursuing a master’s degree in computer science with an emphasis in Data Science and AI. Passionate about uncovering insights through data and solving real-world problems by building tools that make life easier. Currently focused on building a strong foundation in Python, SQL, and other Data Science tools.
       </p>
     </div>
-
-    <!-- Floating Projects Box -->
     <div class="projects-floating">
       <h2>Featured Projects</h2>
       <ul>
@@ -170,13 +187,9 @@
         <li>Housing Price Regression</li>
       </ul>
     </div>
-
-    <!-- Main Header -->
     <h1>Ibrahim Alborno</h1>
     <p>Computer Science BS/MS Student | Aspiring Data Scientist | Focused on AI & Data-Driven Solutions</p>
     <img src="Ibrahim.jpg" alt="Photo of Ibrahim Alborno" />
-
-    <!-- Links -->
     <div class="links-in-header">
       <h2>Links</h2>
       <a href="https://docs.google.com/document/d/1UckaO-XrUd31oDnmE4aagH-QQyfuSTkj/view" target="_blank">📄 Resume</a>
@@ -187,30 +200,46 @@
 
   <div class="container">
     <section>
-      <h2 style="text-align: center;">Demonstrations to My Personal Projects</h2>
+      <h2 style="text-align: center;">Hands-On Project Showcase</h2>
 
       <div class="video-preview">
         <h3>Budgeting App for Commerce Bank</h3>
         <p class="coming-soon">Coming Soon...</p>
-        <p class="description">A full-stack app to track spending, subscriptions, and custom limits with visual breakdowns. <a href="#">Read more...</a></p>
+        <p class="description">
+          A full-stack app to track spending, subscriptions, and custom limits with visual breakdowns.
+          <span class="extra-description"> This project also features AI-generated insights to help users make smarter budgeting decisions.</span>
+          <span class="read-more" onclick="toggleReadMore(this)">Read more...</span>
+        </p>
       </div>
 
       <div class="video-preview">
         <h3>IBM Data Science Certificate Labs</h3>
         <p class="coming-soon">Coming Soon...</p>
-        <p class="description">Hands-on projects involving real-world datasets, machine learning, SQL, and data visualizations. <a href="#">Read more...</a></p>
+        <p class="description">
+          Hands-on projects involving real-world datasets, machine learning, SQL, and data visualizations.
+          <span class="extra-description"> These labs include data wrangling, visualization, and predictive modeling using Python libraries.</span>
+          <span class="read-more" onclick="toggleReadMore(this)">Read more...</span>
+        </p>
       </div>
 
       <div class="video-preview">
         <h3>Machine Learning Loan Predictor</h3>
         <p class="coming-soon">Coming Soon...</p>
-        <p class="description">Classification model to determine if a loan will be paid off based on financial and demographic features. <a href="#">Read more...</a></p>
+        <p class="description">
+          Classification model to determine if a loan will be paid off based on financial and demographic features.
+          <span class="extra-description"> The model compares different algorithms and evaluates performance metrics like precision and recall.</span>
+          <span class="read-more" onclick="toggleReadMore(this)">Read more...</span>
+        </p>
       </div>
 
       <div class="video-preview">
         <h3>Housing Price Regression Model</h3>
         <p class="coming-soon">Coming Soon...</p>
-        <p class="description">Regression modeling to predict home prices using housing market data and Python libraries. <a href="#">Read more...</a></p>
+        <p class="description">
+          Regression modeling to predict home prices using housing market data and Python libraries.
+          <span class="extra-description"> This project explores multivariate linear regression and visualizes error metrics.</span>
+          <span class="read-more" onclick="toggleReadMore(this)">Read more...</span>
+        </p>
       </div>
     </section>
   </div>

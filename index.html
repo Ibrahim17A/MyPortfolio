@@ -16,9 +16,8 @@
 
     header {
       background: #000000;
+      padding: 2rem;
       text-align: center;
-      padding: 2rem 1rem 0.5rem 1rem;
-      position: relative;
     }
 
     header h1 {
@@ -27,64 +26,17 @@
     }
 
     header p {
-      margin: 0.5rem 0 1.5rem;
-      font-size: 1rem;
-    }
-
-    .about-img {
       margin-top: 0.5rem;
+      font-size: 1.2rem;
     }
 
-    .about-img img {
+    header img {
       width: 160px;
       height: 160px;
-      border-radius: 50%;
-      border: 3px solid #ffffff;
       object-fit: cover;
-    }
-
-    .links-section {
-      text-align: center;
-      border-top: 1px solid #fff;
-      border-bottom: 1px solid #fff;
-      padding: 1rem 0;
+      border-radius: 50%;
       margin-top: 1rem;
-    }
-
-    .links-section h2 {
-      margin-bottom: 0.5rem;
-    }
-
-    .links {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 1.5rem;
-    }
-
-    .links a {
-      color: #ffffff;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 0.3rem;
-    }
-
-    .about-floating {
-      position: absolute;
-      left: 30px;
-      top: 60px;
-      width: 320px;
-      text-align: left;
-      background-color: rgba(255, 255, 255, 0.05);
-      padding: 1rem;
-      border: 1px solid #fff;
-      border-radius: 5px;
-    }
-
-    .about-floating h2 {
-      border-bottom: 1px solid #fff;
-      padding-bottom: 0.5rem;
+      border: 3px solid #ffffff;
     }
 
     .container {
@@ -105,6 +57,32 @@
 
     h3 {
       color: #ffffff;
+    }
+
+    a {
+      color: #eeeeee;
+      text-decoration: none;
+    }
+
+    .links-section {
+      position: fixed;
+      top: 50px;
+      left: 200px;
+      z-index: 1000;
+    }
+
+    .links-section h2 {
+      margin-bottom: 0.3rem;
+      margin-left: 20px;
+    }
+
+    .links {
+      margin-left: 20px;
+    }
+
+    .links a {
+      display: block;
+      margin: 0.5rem 0;
     }
 
     .skills-section {
@@ -136,54 +114,49 @@
       background: #000000;
       font-size: 0.9rem;
       color: #ffffff;
-      border-top: 1px solid #333;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="about-floating">
-      <h2>About Me</h2>
-      <p>
-        Computer Science undergraduate pursuing a master's degree in computer science with an emphasis in Data Science and AI.
-        Passionate about uncovering insights through data and solving real-world problems by building tools that make life easier.
-        Currently focused on building a strong foundation in Python, SQL, and other Data Science tools.
-      </p>
-    </div>
 
+  <div class="links-section">
+    <h2>Links</h2>
+    <div class="links">
+      <a href="https://docs.google.com/document/d/1UckaO-XrUd31oDnmE4aagH-QQyfuSTkj/view" target="_blank">📄 Resume</a>
+      <a href="https://www.linkedin.com/in/ibrahim-alborno-2404a7293/" target="_blank">🔗 LinkedIn</a>
+      <a href="https://github.com/ibrahim17a" target="_blank">💻 GitHub</a>
+    </div>
+  </div>
+
+  <header>
     <h1>Ibrahim Alborno</h1>
     <p>Computer Science BS/MS Student | Aspiring Data Scientist | Focused on AI & Data-Driven Solutions</p>
-
-    <div class="about-img">
-      <img src="Ibrahim.jpg" alt="Photo of Ibrahim Alborno" />
-    </div>
-
-    <div class="links-section">
-      <h2>Links</h2>
-      <div class="links">
-        <a href="https://docs.google.com/document/d/1UckaO-XrUd31oDnmE4aagH-QQyfuSTkj/view" target="_blank">📄 Resume</a>
-        <a href="https://www.linkedin.com/in/ibrahim-alborno-2404a7293/" target="_blank">🔗 LinkedIn</a>
-        <a href="https://github.com/ibrahim17a" target="_blank">💻 GitHub</a>
-      </div>
-    </div>
+    <img src="Ibrahim.jpg" alt="Photo of Ibrahim Alborno" />
   </header>
 
   <div class="container">
     <section>
+      <h2>About Me</h2>
+      <p>
+        Computer Science undergraduate pursuing a master’s degree in computer science with an emphasis in Data Science and AI. Passionate about uncovering insights through data and solving real-world problems by building tools that make life easier. Currently focused on building a strong foundation in Python, SQL, and other Data Science tools.
+      </p>
+    </section>
+
+    <section>
       <h2>Featured Projects</h2>
       <p><strong>Budgeting App for Commerce Bank (In Progress):</strong> A full-stack application for personal finance that tracks spending, subscriptions, and custom spending limits with alerts and visual breakdowns.</p>
 
-      <p><strong>IBM Data Science Professional Certificate (Applied Learning Project - In Progress):</strong> Hands-on labs and projects exploring real-world datasets, machine learning models, SQL querying, and visualizations.</p>
+      <p><strong>IBM Data Science Professional Certificate (Applied Learning Project - In Progress):</strong> This Professional Certificate emphasizes hands-on labs in the IBM Cloud. You’ll learn real-world skills, including how to apply AI techniques in data science. Projects include:</p>
 
       <div class="skills-section">
         <div class="skill-column">
           <h3>Project highlights</h3>
           <ul class="project-list">
-            <li>Extract and graph financial data with the Pandas Python library</li>
-            <li>Use SQL to query census, crime, and school demographic data sets</li>
-            <li>Wrangle data, graph plots, and create regression models to predict housing prices</li>
-            <li>Create a dynamic Python dashboard to improve US domestic flight reliability</li>
-            <li>Apply machine learning classification algorithms to predict whether a loan case will be paid off</li>
+            <li>Extract and graph financial data with Pandas</li>
+            <li>Use SQL to query census, crime, and school demographic data</li>
+            <li>Wrangle data, graph plots, and build regression models</li>
+            <li>Create a dynamic dashboard to analyze flight reliability</li>
+            <li>Apply classification to predict loan repayment</li>
             <li>Train and compare machine learning models</li>
           </ul>
         </div>
@@ -206,7 +179,7 @@
             <li>Seaborn</li>
             <li>Folium</li>
             <li>ipython-sql</li>
-            <li>SciPy</li>
+            <li>ScipPy</li>
           </ul>
         </div>
       </div>

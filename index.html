@@ -16,6 +16,7 @@
     header {
       text-align: center;
       padding: 2rem 1rem;
+      position: relative; /* required for absolute positioning inside */
     }
     header h1 {
       margin: 0;
@@ -32,6 +33,24 @@
       border-radius: 50%;
       margin-top: 1rem;
       border: 3px solid #ffffff;
+    }
+
+    .about-floating {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      width: 320px;
+      text-align: left;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      border: 1px solid #fff;
+      border-radius: 5px;
+    }
+
+    .about-floating h2 {
+      border-bottom: 1px solid #fff;
+      padding-bottom: 0.5rem;
+      margin-top: 0;
     }
 
     .links-in-header {
@@ -100,10 +119,20 @@
 </head>
 <body>
   <header>
+    <!-- Floating About Box -->
+    <div class="about-floating">
+      <h2>About Me</h2>
+      <p>
+        Computer Science undergraduate pursuing a master’s degree in computer science with an emphasis in Data Science and AI. Passionate about uncovering insights through data and solving real-world problems by building tools that make life easier. Currently focused on building a strong foundation in Python, SQL, and other Data Science tools.
+      </p>
+    </div>
+
+    <!-- Main Header -->
     <h1>Ibrahim Alborno</h1>
     <p>Computer Science BS/MS Student | Aspiring Data Scientist | Focused on AI & Data-Driven Solutions</p>
     <img src="Ibrahim.jpg" alt="Photo of Ibrahim Alborno" />
 
+    <!-- Links -->
     <div class="links-in-header">
       <h2>Links</h2>
       <a href="https://docs.google.com/document/d/1UckaO-XrUd31oDnmE4aagH-QQyfuSTkj/view" target="_blank">📄 Resume</a>
@@ -113,13 +142,6 @@
   </header>
 
   <div class="container">
-    <section>
-      <h2>About Me</h2>
-      <p>
-        Computer Science undergraduate pursuing a master’s degree in computer science with an emphasis in Data Science and AI. Passionate about uncovering insights through data and solving real-world problems by building tools that make life easier. Currently focused on building a strong foundation in Python, SQL, and other Data Science tools.
-      </p>
-    </section>
-
     <section>
       <h2>Featured Projects</h2>
       <p><strong>Budgeting App for Commerce Bank (In Progress):</strong> A full-stack application for personal finance that tracks spending, subscriptions, and custom spending limits with alerts and visual breakdowns.</p>

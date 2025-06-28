@@ -31,12 +31,35 @@
       font-size: 1rem;
     }
 
+    .about-img {
+      margin-top: 0.5rem;
+    }
+
+    .about-img img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 3px solid #ffffff;
+      object-fit: cover;
+    }
+
+    .links-section {
+      text-align: center;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      padding: 1rem 0;
+      margin-top: 1rem;
+    }
+
+    .links-section h2 {
+      margin-bottom: 0.5rem;
+    }
+
     .links {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 1rem;
-      margin-bottom: 1rem;
+      gap: 1.5rem;
     }
 
     .links a {
@@ -50,26 +73,18 @@
     .about-floating {
       position: absolute;
       left: 30px;
-      top: 50px;
-      width: 300px;
+      top: 60px;
+      width: 320px;
       text-align: left;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      border: 1px solid #fff;
+      border-radius: 5px;
     }
 
     .about-floating h2 {
       border-bottom: 1px solid #fff;
       padding-bottom: 0.5rem;
-    }
-
-    .about-img {
-      margin-top: 0.5rem;
-    }
-
-    .about-img img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      border: 3px solid #ffffff;
-      object-fit: cover;
     }
 
     .container {
@@ -127,7 +142,6 @@
 </head>
 <body>
   <header>
-    <!-- Floating About Me Block -->
     <div class="about-floating">
       <h2>About Me</h2>
       <p>
@@ -144,11 +158,13 @@
       <img src="Ibrahim.jpg" alt="Photo of Ibrahim Alborno" />
     </div>
 
-    <div class="links">
-      <strong>Links</strong>
-      <a href="https://docs.google.com/document/d/1UckaO-XrUd31oDnmE4aagH-QQyfuSTkj/view" target="_blank">📄 Resume</a>
-      <a href="https://www.linkedin.com/in/ibrahim-alborno-2404a7293/" target="_blank">🔗 LinkedIn</a>
-      <a href="https://github.com/ibrahim17a" target="_blank">💻 GitHub</a>
+    <div class="links-section">
+      <h2>Links</h2>
+      <div class="links">
+        <a href="https://docs.google.com/document/d/1UckaO-XrUd31oDnmE4aagH-QQyfuSTkj/view" target="_blank">📄 Resume</a>
+        <a href="https://www.linkedin.com/in/ibrahim-alborno-2404a7293/" target="_blank">🔗 LinkedIn</a>
+        <a href="https://github.com/ibrahim17a" target="_blank">💻 GitHub</a>
+      </div>
     </div>
   </header>
 
@@ -181,3 +197,24 @@
           </ul>
         </div>
         <div class="skill-column">
+          <h3>Libraries</h3>
+          <ul>
+            <li>NumPy</li>
+            <li>Pandas</li>
+            <li>Matplotlib</li>
+            <li>Scikit-learn</li>
+            <li>Seaborn</li>
+            <li>Folium</li>
+            <li>ipython-sql</li>
+            <li>SciPy</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Ibrahim Alborno. All rights reserved.
+  </footer>
+</body>
+</html>

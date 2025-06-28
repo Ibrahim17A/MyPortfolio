@@ -56,7 +56,7 @@
     .projects-floating {
       position: absolute;
       top: 20px;
-      right: 270px;
+      right: 250px;
       width: 320px;
       text-align: left;
       background-color: rgba(255, 255, 255, 0.05);
@@ -72,7 +72,7 @@
     }
 
     .links-in-header {
-      margin-top: 4.5rem;
+      margin-top: 5rem;
     }
     .links-in-header h2 {
       margin-bottom: 0.5rem;
@@ -126,6 +126,20 @@
     .project-list li {
       margin-bottom: 0.75rem;
     }
+    .video-preview {
+      margin-top: 2rem;
+    }
+    .video-preview h3 {
+      margin-bottom: 0.25rem;
+    }
+    .video-preview .coming-soon {
+      font-style: italic;
+      color: #aaa;
+      margin-bottom: 0.25rem;
+    }
+    .video-preview .description {
+      color: #ccc;
+    }
     footer {
       text-align: center;
       padding: 1rem;
@@ -149,10 +163,10 @@
     <div class="projects-floating">
       <h2>Featured Projects</h2>
       <ul>
-        <li>Budgeting App for Commerce Bank (In Progress)</li>
-        <li>IBM Data Science Certificate Labs</li>
+        <li>Budgeting App for Commerce Bank</li>
+        <li>IBM Data Science Labs</li>
         <li>Machine Learning Loan Predictor</li>
-        <li>Housing Price Regression Model</li>
+        <li>Housing Price Regression</li>
       </ul>
     </div>
 
@@ -172,45 +186,30 @@
 
   <div class="container">
     <section>
-      <h2>Featured Projects</h2>
-      <p><strong>Budgeting App for Commerce Bank (In Progress):</strong> A full-stack application for personal finance that tracks spending, subscriptions, and custom spending limits with alerts and visual breakdowns.</p>
+      <h2>Project Demonstrations</h2>
 
-      <p><strong>IBM Data Science Professional Certificate (Applied Learning Project - In Progress):</strong> Hands-on labs and projects exploring real-world datasets, machine learning models, SQL querying, and visualizations.</p>
+      <div class="video-preview">
+        <h3>Budgeting App for Commerce Bank</h3>
+        <p class="coming-soon">Coming Soon...</p>
+        <p class="description">A full-stack app to track spending, subscriptions, and custom limits with visual breakdowns. <a href="#">See more...</a></p>
+      </div>
 
-      <div class="skills-section">
-        <div class="skill-column">
-          <h3>Project highlights</h3>
-          <ul class="project-list">
-            <li>Extract and graph financial data with the Pandas Python library</li>
-            <li>Use SQL to query census, crime, and school demographic data sets</li>
-            <li>Wrangle data, graph plots, and create regression models to predict housing prices with data science Python libraries</li>
-            <li>Create a dynamic Python dashboard to improve US domestic flight reliability</li>
-            <li>Apply machine learning classification algorithms to predict whether a loan case will be paid off</li>
-            <li>Train and compare machine learning models</li>
-          </ul>
-        </div>
-        <div class="skill-column">
-          <h3>Tools</h3>
-          <ul>
-            <li>Jupyter / JupyterLab</li>
-            <li>GitHub</li>
-            <li>R Studio</li>
-            <li>Watson Studio</li>
-          </ul>
-        </div>
-        <div class="skill-column">
-          <h3>Libraries</h3>
-          <ul>
-            <li>NumPy</li>
-            <li>Pandas</li>
-            <li>Matplotlib</li>
-            <li>Scikit-learn</li>
-            <li>Seaborn</li>
-            <li>Folium</li>
-            <li>ipython-sql</li>
-            <li>ScipPy</li>
-          </ul>
-        </div>
+      <div class="video-preview">
+        <h3>IBM Data Science Certificate Labs</h3>
+        <p class="coming-soon">Coming Soon...</p>
+        <p class="description">Hands-on projects involving real-world datasets, machine learning, SQL, and data visualizations. <a href="#">See more...</a></p>
+      </div>
+
+      <div class="video-preview">
+        <h3>Machine Learning Loan Predictor</h3>
+        <p class="coming-soon">Coming Soon...</p>
+        <p class="description">Classification model to determine if a loan will be paid off based on financial and demographic features. <a href="#">See more...</a></p>
+      </div>
+
+      <div class="video-preview">
+        <h3>Housing Price Regression Model</h3>
+        <p class="coming-soon">Coming Soon...</p>
+        <p class="description">Regression modeling to predict home prices using housing market data and Python libraries. <a href="#">See more...</a></p>
       </div>
     </section>
   </div>
